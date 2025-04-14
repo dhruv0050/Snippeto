@@ -21,7 +21,7 @@ const CreateSnippetPage = () => {
         }
        })
 
-       redirect('/')
+       redirect('/home')
     }
     return (
         <div className="min-h-screen bg-gray-900 text-gray-100 p-4 md:p-8">
@@ -58,15 +58,15 @@ const CreateSnippetPage = () => {
                         />
                     </div>
                     <div className="pt-2">
-                        <Link href={"/home"}>
-                        
+                                                
                         <Button 
                             type="submit" 
                             className="w-full md:w-auto bg-indigo-600 hover:bg-indigo-700 text-white"
+                            
                         >
                             Create Snippet
                         </Button>
-                        </Link>
+                        
                     </div>
                 </form>
             </div>

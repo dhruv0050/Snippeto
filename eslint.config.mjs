@@ -12,6 +12,7 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
 
+  // ✅ Rule overrides for your codebase
   {
     files: ["**/*.{js,ts,jsx,tsx}"],
     rules: {
@@ -19,6 +20,10 @@ const eslintConfig = [
       "@typescript-eslint/no-explicit-any": "off",
       "@typescript-eslint/no-unused-vars": "off",
     },
+  },
+
+  {
+    ignores: ["src/generated/prisma/**"],
   },
 ];
 

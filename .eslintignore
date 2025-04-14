@@ -2,5 +2,4 @@ dist/
 .next/
 build/
 node_modules/
-src/generated/
 src/generated/prisma/

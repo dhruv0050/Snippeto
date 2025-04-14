@@ -20,5 +20,5 @@ export const deleteSnippet = async (id: number) => {
     await prisma.snippeto.delete({
         where: { id }
     })
-    redirect('/')
+    redirect('/home')
 }

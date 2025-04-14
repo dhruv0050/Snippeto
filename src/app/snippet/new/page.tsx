@@ -20,8 +20,6 @@ const CreateSnippetPage = () => {
             code
         }
        })
-       
-       console.log(snippet)
 
        redirect('/')
     }
@@ -30,7 +28,7 @@ const CreateSnippetPage = () => {
             <div className="max-w-2xl mx-auto">
                 <div className="mb-6 flex items-center justify-between">
                     <h1 className="text-2xl md:text-3xl font-bold text-indigo-400">Create New Snippet</h1>
-                    <Link href="/">
+                    <Link href="/home">
                         <Button variant="outline" className="border-gray-700 text-gray-300 hover:text-white hover:bg-gray-800">
                             Cancel
                         </Button>
@@ -60,12 +58,15 @@ const CreateSnippetPage = () => {
                         />
                     </div>
                     <div className="pt-2">
+                        <Link href={"/home"}>
+                        
                         <Button 
                             type="submit" 
                             className="w-full md:w-auto bg-indigo-600 hover:bg-indigo-700 text-white"
                         >
                             Create Snippet
                         </Button>
+                        </Link>
                     </div>
                 </form>
             </div>

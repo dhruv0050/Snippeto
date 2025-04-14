@@ -40,7 +40,7 @@ const SnippetDetailPage = async ({params} : {params: Promise<{id:string}>}) => {
             <code className="font-mono text-sm md:text-base">{snippet?.code}</code>
           </pre>
           <div className="absolute top-2 right-2">
-            <Link href="/">
+            <Link href="/home">
               <Button variant="ghost" className="text-gray-400 hover:text-gray-200 hover:bg-gray-700">
                 Back
               </Button>

@@ -1,7 +1,7 @@
 "use client"
 import { Editor } from '@monaco-editor/react'
 import React, { useState } from 'react'
-import type { Snippeto } from '@prisma/client'
+import type { Snippeto } from '@/generated/prisma'; 
 import { Button } from './button'
 import * as actions from '@/actions'
 
